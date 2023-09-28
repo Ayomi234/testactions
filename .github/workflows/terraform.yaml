@@ -1,4 +1,4 @@
-name: terraform 
+name: Terraform 
 
 on: [push]
 
@@ -6,8 +6,8 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
     steps: 
-      - name: checkout
-        uses: action/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Setup terraform 
         uses: hashicorp/setup-terraform@v2
         with: 
